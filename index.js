@@ -3,8 +3,6 @@ const mongodb       = require('mongodb')
 let customerdata    = require('./m3-customer-data.json')
 let customeraddress = require('./m3-customer-address-data.json')
 
-const recordsLimit = 20
-
 let start = 0
 let limit = process.argv[2]
 if(!limit) limit = 100
